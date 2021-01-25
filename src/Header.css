@@ -15,6 +15,7 @@
   margin-left: 20px;
   display: flex;
   align-items: center;
+  margin-right: 6px;
 }
 
 .header__icon > img {
@@ -43,6 +44,45 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15vw;
-  margin-right: 80px;
+  width: 200px;
+  padding-right: 24px;
+}
+
+.header__right > svg {
+  margin-left: 6px;
+  margin-right: 16px;
+}
+
+.header__right > p {
+  margin-left: 6px;
+  min-width: 120px;
+}
+
+@media (max-width: 716px) {
+  .header__right > p {
+    display: none;
+  }
+
+  .header__right {
+    justify-content: flex-end;
+    flex: 0.1;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__icon > img {
+    width: 50px;
+    object-fit: cover;
+    object-position: left top;
+  }
+}
+
+@media (max-width: 510px) {
+  .header__center {
+    flex: 0.45;
+  }
+
+  .header__center > input {
+    width: 125px;
+  }
 }

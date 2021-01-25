@@ -40,3 +40,10 @@
 .banner__info > h5 {
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  .banner__info {
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+}

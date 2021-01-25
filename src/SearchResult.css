@@ -14,9 +14,10 @@
 
 .searchResult > img {
   height: 200px;
-  width: 350px;
+  max-width: 350px;
   border-radius: 10px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .searchResult__info {
@@ -69,4 +70,41 @@
   position: absolute;
   bottom: 20px;
   right: 30px;
+}
+
+@media (max-width: 600px) {
+  .searchResults__price {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+
+  .searchResults__price > p {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+
+  .searchResult__heart {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .searchResult__infoTop > p:last-child {
+    padding-bottom: 30px;
+  }
+
+  .searchResult__heart {
+    position: absolute;
+    color: red;
+    top: 25px;
+    left: 25px;
+  }
+}
+@media (max-width: 470px) {
+  .searchResult {
+    flex-direction: column;
+  }
 }
